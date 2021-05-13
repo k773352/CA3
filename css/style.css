@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+body {
+    background-color: #eee;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+   
+   
+.nav ul li {
+list-style: none;
+display: inline-block;
+line-height: 100px;
+}
+   
+.nav ul li a {
+display: block;
+text-decoration: none;
+font-size: 14px;
+font-family: arial;
+color: #1e1e1e;
+padding: 0 20px;
+}
+
+.nav ul li a:hover {
+    color: orange;
+}
+
+.nav ul li a.active {
+    color: red;
+}
+
+
+
+#footer {
+    position: absolute;
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+#footer ul {
+    margin-top: 0.4rem;
+}
+
+#footer ul li {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: scale(1,0.9);
+    color: gray;
+    text-align: center;
+    line-height: 1.3rem;
+    font-size: 12px;
+    list-style: none;
+}
+
+#footer ul li a {
+    color: gray;
+}
+
+#footer ul li a:hover {
+    color: black;
+}
+
+
+
+
+.staffBox {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.stffBoxIN {
+    margin: 0 auto;
+}
+
+.staffBoxFontBox {
+    padding-left: 2rem;
+    color: #37302d;
+    transform: scale(1,0.9);
+}
+
+.staffBoxFontBox ul {
+    list-style: none;
+}
+
+.staffBoxFontBox ul li {
+    padding-bottom: 0.5em; 
+    font-size: 15px; 
+}
+
+.staffBoxFontBox span {
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #ffffff;
+    padding-bottom: 1rem;
+}
+
+input {
+    padding: 0.5em;
+    font-size: 13px;
+    box-shadow: gray 0.5px 0.5px 1px;
+}
+
+input[type="submit"] {
+    padding: 7.5px 15px;
+    background: red;
+    cursor: pointer;
+    border-radius: 0.2em;
+    text-shadow: 1px 1px 1px rgb(80, 80, 80);
+    color: white;
+    font-size: 14px;
+}
+
+input:hover[type="submit"] {
+    padding: 7.5px 15px;
+    background: rgb(219, 96, 19);
+    cursor: pointer;
+    border-radius: 0.2em;
+    text-shadow: 1px 1px 1px rgb(80, 80, 80);
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+.userBox {
+    position: relative;
+    padding: 1rem 0 0 0.5em;
+}
+
+.userBox a {
+    background-color: orange;
+    color: white;
+    padding: 0.8em 1.2em;
+    text-decoration: none;
+    border-radius: 0.2rem;
+    box-shadow: gray 1px 1px 2px;
+    text-shadow: 1px 1px 1px rgb(80, 80, 80);
+    margin-left: 1.5rem;
+    font-size: 17px;
+}
+
+.userBox a:hover {
+    background: #ff8763;
+}
+
+
+.profileBox {
+    margin: 1.5rem 2rem 3rem 1rem;  
+}
+
+.profile-out {
+    max-width: 100%;
+    text-align: center;    
+}
+
+.profile-in {  
+    color: black;
+    border-radius: 1em;
+}
+  
+.profile {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-photo { 
+    border: rgba(255, 255, 255, 0.434) 1px solid;
+    margin: auto;
+    align-items: center;
+}
+  
+.user p{
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.user {
+    border: solid 1px #c7c6c6a3;
+    border-radius: 0.2em;
+    background-color: #eeead9;
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 200px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.user span {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: left;
+    padding-top: 2rem;
+}
+
+
+
+
+
+table {
+    width: 700px;
+    margin: 0 2rem 7rem 2rem;
+    padding: 0;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    padding: 0;
+}
+
+th, td {
+    padding: 5px;
+    height: 40px;
+}
+
+th {
+    background-color: #eeead9;
+}
+
+td p {
+    font-size: 12px;
+}
+
+
+
+
+
+.formBox {
+    margin: 1.3rem 2rem 5rem 1.3rem;
+}
+
+.row {
+    margin-left: 2rem;
+    padding-bottom: 1.8rem;
+    font-size: 14px;
+    line-height: 2.5rem;
+}
+
+.form-inline {
+    line-height: 1rem;
+}
+.form-inline label {
+    padding-right: 2rem;
+    margin-left: 1.5rem;
+}
+
+.form-inline textarea {
+    width: 450px;
+    height: 120px;
+}

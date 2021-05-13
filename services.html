@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby4040443CA3</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- My JavaScript -->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Page 2</a></li>
+            </ul>
+        </div>
+
+        
+        <form class="formBox" name="surveyForm" onsubmit="return validateForm()" action="http://example.com/script.php"
+        method="POST" target="hidden-form">
+            
+            <h2>Please Check One</h2>
+
+            <div class="row">
+                <label>1. Flavor of the Starter.</label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="starter[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="starter[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="starter[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>2. Flavor of the Main.</label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="main[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="main[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="main[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>3. Taste / flavor of the Dessert.</label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="dessert[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="dessert[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="dessert[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>4. The appearance of the food.</label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="food[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="food[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="food[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>5. Server's attitude.</label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="server[]" value="Excellent"> Excellent</label>
+                    <label><input type="checkbox" name="server[]" value="Good"> Good</label>
+                    <label><input type="checkbox" name="server[]" value="Improvement"> Needs Improvement</label>
+                </div>
+            </div>
+
+            <div class="row userInfo">
+                <label>Name</label>
+                <input type="text" name="name">
+                <div class="error" id="nameErr"></div>
+            </div>
+
+            <div class="row">
+                <label>Email</label>
+                <input type="text" name="email">
+                <div class="error" id="emailErr"></div>
+            </div>
+           
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <IFRAME style="display:none" name="hidden-form"></IFRAME>
+
+
+        <!-- Footer --->
+        <div id="footer">
+            <ul>
+                <li>Copyright © 2021 Ruby. All rights reserved.</li>
+                <li>GitHub Link: <a href="https://github.com/k773352/CA3.git"
+                        target="_blank">https://github.com/k773352/CA3.git</a></li>
+                <li>GitHub Commits: <a href="https://github.com/k773352/CA3/commits/master" target="_blank">https://github.com/k773352/CA3/commits/master</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

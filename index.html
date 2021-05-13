@@ -1,15 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ruby4040443CA3</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- My JavaScript -->
+    <script src="js/script.js"></script>
 </head>
+
 <body>
-   <ul>
-       <li><a href="#">Home</a></li>
-       <li><a href="#">Page 2</a></li>
-   </ul> 
+    <div id="wrapper">
+        <div class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="services.html">Page 2</a></li>
+            </ul>
+        </div>
+
+        <!-- Staff Password --->
+        <div class="staffBox">
+            <div class="staffBoxIN">
+                <div class="staffBoxFontBox">
+                    <label for="Staff Password" id="lblStaff">
+                        <span>Staff Password Validator</span>
+                        <input type="text" id="StaffPW" placeholder="Input Staff Password">
+                        <input onclick="validate()" type="submit" value="Check Password" title="check Password">
+                    </label>
+
+                    <label id="inValid" style="color:red; visibility:hidden">Invalid Password, please reenter.</label>
+                    <label id="Valid" style="color: red; visibility:hidden">Valid Password</label>
+
+                    <ul>
+                        <li>a. The password must have at least one lowercase letter.</li>
+                        <li>b. The password must have at least one uppercase letter.</li>
+                        <li>c. It must contain (at least) one digit and (at least) one special
+                            character.</li>
+                        <li>d. And it must be at least eight characters long.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer Information --->
+        <div class="userBox">
+            <a href="#" id="btHide" title="Customers Information">Customers Information</a>
+            <div class="profileBox">
+                <div id="hide" class="profile-out" style="display: none">
+                    <div class="profile-in">
+                        <div class="profile" id="results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu --->
+        <table>
+            <tr>
+                <th>Starters</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Souu of Day</h4>
+                    <p>Served with Homemade Guinness Brown Bread</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_1" id="qnt_1" data-price="€5.50" size="4"></td>
+                <td>€5.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>ICrispy Chicken And Cauliflower Salad</h4>
+                    <p>with baby gem lettuce, spicy corn and pickled onion</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_2" id="qnt_2" data-price="€8.95" size="4"></td>
+                <td>€8.95</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Smoked Salmon</h4>
+                    <p>with horse and capers cream, served with homemade Guinness bread</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_3" id="qnt_3" data-price="€10.95" size="4"></td>
+                <td>€10.95</td>
+            </tr>
+
+
+            <tr>
+                <th>Main</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Butternut Squash & Chorizo Risotto</h4>
+                    <p>with pumpkin seeds , kale &m parmesan cheese</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_4" id="qnt_4" data-price="€16.95" size="4"></td>
+                <td>€16.95</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Grilled Fillet of Sea Bass</h4>
+                    <p>Seasonal potatoes , asparagus, sauce vierge ,lemon and caper butter</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_5" id="qnt_5" data-price="€18.50" size="4"></td>
+                <td>€18.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>raditional Fish & Chips</h4>
+                    <p>Seasonal potatoes , asparagus, sauce vierge ,lemon and caper butter</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_6" id="qnt_6" data-price="€16.95" size="4"></td>
+                <td>€16.95</td>
+            </tr>
+
+            <tr>
+                <th>Desserts</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Valhrona Chocolate Brownie</h4>
+                    <p>Hazelnut , Coconut Ice Cream</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_7" id="qnt_7" data-price="€6.95" size="4"></td>
+                <td>€6.95</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Christmas Pudding</h4>
+                    <p>Brandy Cream, Vanilla Custard</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_8" id="qnt_8" data-price="€6.95" size="4"></td>
+                <td>€6.95</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Selection Ice Cream</h4>
+                    <p>Vanilla bourbon , Coconut, Chocolate and Salted Caramel</p>
+                </td>
+                <td><input type="text" value="0" name="qnt_9" id="qnt_9" data-price="€6.95" size="4"></td>
+                <td>€6.95</td>
+            </tr>
+
+            <tr>
+                <th>Drinks</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Mojito</h4>
+                </td>
+                <td><input type="text" value="0" name="qnt_10" id="qnt_10" data-price="€6.00" size="4"></td>
+                <td>€6.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Sex on the beach</h4>
+                </td>
+                <td><input type="text" value="0" name="qnt_11" id="qnt_11" data-price="€6.00" size="4"></td>
+                <td>€6.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Pink lady</h4>
+                </td>
+                <td><input type="text" value="0" name="qnt_12" id="qnt_12" data-price="€4.00" size="4"></td>
+                <td>€4.00</td>
+            </tr>
+
+            <tr>
+                <td class="total">&nbsp;</td>
+                <td class="total"><strong>Total:</strong></td>
+                <td class="total"><strong>
+                        <div id="ItemsTotal">€0</div>
+                    </strong>
+                </td>
+            </tr>
+        </table>
+        <script>
+            var total_items = 12;
+
+            function CalculateItemsValue() {
+                var total = 0;
+
+                for (let i = 1; i <= total_items; i++) {
+                    itemID = document.getElementById("qnt_" + i);
+                    total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+
+                }
+                document.getElementById('ItemsTotal').innerHTML = "€" + total;
+            }
+
+            document.querySelectorAll('[id^="qnt_"]').forEach(item => {
+                item.addEventListener('keyup', CalculateItemsValue);
+            });
+
+        </script>
+
+        <!-- Footer --->
+        <div id="footer">
+            <ul>
+                <li>Copyright © 2021 Ruby. All rights reserved.</li>
+                <li>GitHub Link: <a href="https://github.com/k773352/CA3.git"
+                        target="_blank">https://github.com/k773352/CA3.git</a></li>
+                <li>GitHub Commits: <a href="https://github.com/k773352/CA3/commits/master" target="_blank">https://github.com/k773352/CA3/commits/master</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
